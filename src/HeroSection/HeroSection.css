@@ -1,5 +1,5 @@
 .hero{
-    flex: 0 0 250px;
+    flex: 0 0 300px;
   }
   .hero-logo{
     width: 50%;
@@ -17,8 +17,6 @@
     color: #FFFFFF;
     word-wrap: break-word;
     max-width: 50%;
-    /* background: #FFFFFF; */
-    /* background: #F7C1C1; */
     text-shadow: 4px 3px 5px #333333;
   }
   .hero-title h4{

@@ -1,0 +1,54 @@
+.burger {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    left: 8%;
+    z-index: 100;
+  }
+  .burger span {
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    transition: all 0.25s;
+  }
+  .burger.activated span {
+    background-color: gold;
+  }
+  .burger.three.activated span:nth-child(1),
+  .burger.three.activated span:nth-child(3) {
+    animation-duration: 0.75s;
+  }
+  .burger.three.activated span:nth-child(1) {
+    animation-name: top-spin;
+    transform: translateY(5px) rotate(45deg);
+  }
+  .burger.three.activated span:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.three.activated span:nth-child(3) {
+    animation-name: bottom-spin;
+    transform: translateY(-13px) rotate(-45deg);
+  }
+  .side-nav {
+    display: inline-block;
+    width: 84%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: -100%;
+    transition: top 250ms;
+    color: white;
+    padding-top: 3em;
+  }
+  .side-nav.active {
+    top: 0;
+    transition: top 250ms;
+  }
+    
